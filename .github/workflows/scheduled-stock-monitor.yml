@@ -2,7 +2,7 @@ name: Scheduled Pokemon Store Stock Monitor
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 
 permissions:
