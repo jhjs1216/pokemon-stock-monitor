@@ -2,7 +2,7 @@ name: Pokemon Store Stock Monitor
 
 on:
   schedule:
-  - cron: "3-59/10 * * * *"
+    - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -36,6 +36,7 @@ jobs:
           NTFY_TOPIC_URL: ${{ secrets.NTFY_TOPIC_URL }}
           SLEEP_MIN_SECONDS: "1"
           SLEEP_MAX_SECONDS: "2"
+          ALERT_ON_FIRST_IN_STOCK: "true"
         run: python monitor.py
 
       - name: Save latest stock state
