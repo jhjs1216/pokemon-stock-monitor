@@ -24,6 +24,7 @@ ALERT_ON_FIRST_IN_STOCK = os.getenv("ALERT_ON_FIRST_IN_STOCK", "false").lower() 
 REQUEST_TIMEOUT_SECONDS = int(os.getenv("REQUEST_TIMEOUT_SECONDS", "20"))
 SLEEP_MIN_SECONDS = float(os.getenv("SLEEP_MIN_SECONDS", "2"))
 SLEEP_MAX_SECONDS = float(os.getenv("SLEEP_MAX_SECONDS", "5"))
+CATEGORY_PAGE_SIZE = int(os.getenv("CATEGORY_PAGE_SIZE", "500"))
 
 USER_AGENT = os.getenv(
     "USER_AGENT",
@@ -153,6 +154,19 @@ def extract_product_no(url: str) -> Optional[str]:
     return match.group(1) if match else None
 
 
+def extract_category_no(url: str) -> Optional[str]:
+    query = parse_qs(urlparse(url).query)
+    category_no = query.get("categoryNo", [None])[0]
+    if category_no and category_no.isdigit():
+        return category_no
+    return None
+
+
+def is_product_list_url(url: str) -> bool:
+    parsed = urlparse(url)
+    return parsed.path.endswith("/product-list.html") and bool(extract_category_no(url))
+
+
 def load_shopby_client_id(product_url: str) -> str:
     parsed = urlparse(product_url)
     origin = f"{parsed.scheme}://{parsed.netloc}"
@@ -255,6 +269,84 @@ def fetch_product_from_shopby_api(url: str) -> Optional[Dict[str, str]]:
     }
 
 
+def product_detail_url(product_no: Any) -> str:
+    return f"https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo={product_no}"
+
+
+def is_category_item_available(item: Dict[str, Any]) -> bool:
+    return item.get("saleStatusType") == "ONSALE" and not bool(item.get("isSoldOut"))
+
+
+def fetch_category(url: str) -> Dict[str, Any]:
+    category_no = extract_category_no(url)
+    if not category_no:
+        raise ValueError("categoryNo is required for product-list URLs.")
+
+    client_id = load_shopby_client_id(url)
+    headers = shopby_headers(client_id)
+
+    items: List[Dict[str, Any]] = []
+    total_count = 0
+    page_count = 1
+    page_number = 1
+
+    while page_number <= page_count:
+        response = requests.get(
+            f"{SHOPBY_API_BASE_URL}/products/search",
+            headers=headers,
+            params={
+                "order.by": "SALE_CNT",
+                "order.direction": "DESC",
+                "filter.saleStatus": "ALL_CONDITIONS",
+                "filter.soldout": "true",
+                "filter.totalReviewCount": "true",
+                "filter.keywords": "",
+                "categoryNos": category_no,
+                "categoryNo": category_no,
+                "pageSize": str(CATEGORY_PAGE_SIZE),
+                "pageNumber": str(page_number),
+            },
+            timeout=REQUEST_TIMEOUT_SECONDS,
+        )
+        response.raise_for_status()
+        data = response.json()
+
+        total_count = int(data.get("totalCount") or total_count)
+        page_count = int(data.get("pageCount") or page_count)
+        page_items = data.get("items") if isinstance(data, dict) else []
+        if isinstance(page_items, list):
+            items.extend(item for item in page_items if isinstance(item, dict))
+
+        page_number += 1
+
+    available_items = [item for item in items if is_category_item_available(item)]
+    available_products = [
+        {
+            "productNo": str(item.get("productNo")),
+            "name": unescape(str(item.get("productName") or "상품명 확인 불가")),
+            "url": product_detail_url(item.get("productNo")),
+        }
+        for item in available_items
+        if item.get("productNo")
+    ]
+
+    preview = ", ".join(product["name"] for product in available_products[:5])
+    if len(available_products) > 5:
+        preview += f" 외 {len(available_products) - 5}개"
+
+    return {
+        "name": f"카테고리 {category_no} 총 {total_count}건 / 판매중 {len(available_products)}건"
+        + (f": {preview}" if preview else ""),
+        "status": "in_stock" if available_products else "out_of_stock",
+        "category_no": category_no,
+        "total_count": total_count,
+        "checked_count": len(items),
+        "available_count": len(available_products),
+        "available_product_nos": [product["productNo"] for product in available_products],
+        "available_products": available_products[:20],
+    }
+
+
 def judge_stock_status(html: str) -> str:
     soup = BeautifulSoup(html, "html.parser")
 
@@ -273,6 +365,9 @@ def judge_stock_status(html: str) -> str:
 
 
 def fetch_product(url: str) -> Dict[str, str]:
+    if is_product_list_url(url):
+        return fetch_category(url)
+
     api_result = fetch_product_from_shopby_api(url)
     if api_result and api_result["status"] != "unknown":
         return api_result
@@ -317,6 +412,22 @@ def should_alert(previous_status: Optional[str], current_status: str) -> bool:
     return previous_status is None and ALERT_ON_FIRST_IN_STOCK
 
 
+def should_alert_result(previous: Dict[str, Any], result: Dict[str, Any]) -> bool:
+    if "total_count" in result or "available_count" in result:
+        previous_total = int(previous.get("total_count") or 0)
+        previous_available = int(previous.get("available_count") or 0)
+        current_total = int(result.get("total_count") or 0)
+        current_available = int(result.get("available_count") or 0)
+
+        if previous_total == 0 and previous_available == 0:
+            return False
+
+        return current_total > previous_total or current_available > previous_available
+
+    previous_status = previous.get("status") if isinstance(previous, dict) else None
+    return should_alert(previous_status, result["status"])
+
+
 def monitor_once() -> int:
     products = load_products()
     state = load_state()
@@ -338,7 +449,7 @@ def monitor_once() -> int:
             print(f"  name={product_name}")
             print(f"  status={previous_status or 'none'} -> {current_status}")
 
-            if should_alert(previous_status, current_status):
+            if should_alert_result(previous if isinstance(previous, dict) else {}, result):
                 send_ntfy_alert(product_name, url)
                 print("  notification sent")
 
@@ -347,6 +458,12 @@ def monitor_once() -> int:
                 "status": current_status,
                 "last_checked_at": now_iso(),
                 "last_error": None,
+                "category_no": result.get("category_no"),
+                "total_count": result.get("total_count"),
+                "checked_count": result.get("checked_count"),
+                "available_count": result.get("available_count"),
+                "available_product_nos": result.get("available_product_nos"),
+                "available_products": result.get("available_products"),
             }
         except Exception as exc:
             print(f"  error: {exc}")
