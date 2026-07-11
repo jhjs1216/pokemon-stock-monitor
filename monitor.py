@@ -390,7 +390,7 @@ def send_ntfy_alert(product_name: str, url: str) -> None:
 
     message = f"🔥 포켓몬스토어 재고 발견!\n상품명: {product_name}\nURL: {url}"
     headers = {
-        "Title": "포켓몬스토어 재고 발견",
+        "Title": "Pokemon Store Stock Alert",
         "Tags": "fire,shopping_cart",
         "Priority": "high",
     }
