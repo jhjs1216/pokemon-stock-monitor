@@ -383,12 +383,11 @@ def fetch_product(url: str) -> Dict[str, str]:
     }
 
 
-def send_ntfy_alert(product_name: str, url: str) -> None:
+def send_ntfy_alert(message: str) -> None:
     if not NTFY_TOPIC_URL:
         print("NTFY_TOPIC_URL is not set. Skipping notification.")
         return
 
-    message = f"🔥 포켓몬스토어 재고 발견!\n상품명: {product_name}\nURL: {url}"
     headers = {
         "Title": "Pokemon Store Stock Alert",
         "Tags": "fire,shopping_cart",
@@ -412,20 +411,82 @@ def should_alert(previous_status: Optional[str], current_status: str) -> bool:
     return previous_status is None and ALERT_ON_FIRST_IN_STOCK
 
 
-def should_alert_result(previous: Dict[str, Any], result: Dict[str, Any]) -> bool:
+def product_name_by_no(products: List[Dict[str, Any]]) -> Dict[str, str]:
+    names = {}
+    for product in products:
+        product_no = str(product.get("productNo") or "").strip()
+        name = str(product.get("name") or product_no).strip()
+        if product_no:
+            names[product_no] = name
+    return names
+
+
+def format_product_lines(product_nos: List[str], names: Dict[str, str], limit: int = 8) -> List[str]:
+    lines = []
+    for product_no in product_nos[:limit]:
+        name = names.get(product_no, product_no)
+        lines.append(f"- {name} ({product_no})")
+    if len(product_nos) > limit:
+        lines.append(f"- ... and {len(product_nos) - limit} more")
+    return lines
+
+
+def build_alert_message(previous: Dict[str, Any], result: Dict[str, Any], url: str) -> Optional[str]:
     if "total_count" in result or "available_count" in result:
         previous_total = int(previous.get("total_count") or 0)
         previous_available = int(previous.get("available_count") or 0)
         current_total = int(result.get("total_count") or 0)
         current_available = int(result.get("available_count") or 0)
+        previous_nos = {
+            str(product_no)
+            for product_no in previous.get("available_product_nos") or []
+            if str(product_no).strip()
+        }
+        current_nos = {
+            str(product_no)
+            for product_no in result.get("available_product_nos") or []
+            if str(product_no).strip()
+        }
 
-        if previous_total == 0 and previous_available == 0:
-            return False
+        if previous_total == 0 and previous_available == 0 and not previous_nos:
+            return None
 
-        return current_total > previous_total or current_available > previous_available
+        added = sorted(current_nos - previous_nos)
+        removed = sorted(previous_nos - current_nos)
+        total_changed = current_total != previous_total
+        available_changed = current_available != previous_available
+
+        if not added and not removed and not total_changed and not available_changed:
+            return None
+
+        current_names = product_name_by_no(result.get("available_products") or [])
+        all_names = product_name_by_no(previous.get("available_products") or [])
+        all_names.update(current_names)
+
+        lines = [
+            "Pokemon Store category stock changed!",
+            f"Total products: {previous_total} -> {current_total}",
+            f"Available products: {previous_available} -> {current_available}",
+        ]
+
+        if added:
+            lines.append("")
+            lines.append(f"Newly available ({len(added)}):")
+            lines.extend(format_product_lines(added, all_names))
+
+        if removed:
+            lines.append("")
+            lines.append(f"No longer available ({len(removed)}):")
+            lines.extend(format_product_lines(removed, all_names))
+
+        lines.append("")
+        lines.append(f"URL: {url}")
+        return "\n".join(lines)
 
     previous_status = previous.get("status") if isinstance(previous, dict) else None
-    return should_alert(previous_status, result["status"])
+    if should_alert(previous_status, result["status"]):
+        return f"Pokemon Store stock found!\nProduct: {result['name']}\nURL: {url}"
+    return None
 
 
 def monitor_once() -> int:
@@ -449,8 +510,9 @@ def monitor_once() -> int:
             print(f"  name={product_name}")
             print(f"  status={previous_status or 'none'} -> {current_status}")
 
-            if should_alert_result(previous if isinstance(previous, dict) else {}, result):
-                send_ntfy_alert(product_name, url)
+            alert_message = build_alert_message(previous if isinstance(previous, dict) else {}, result, url)
+            if alert_message:
+                send_ntfy_alert(alert_message)
                 print("  notification sent")
 
             product_state[url] = {
