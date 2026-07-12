@@ -79,10 +79,9 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 11,
+      "available_count": 10,
       "available_product_nos": [
         "114167079",
-        "114167069",
         "114168821",
         "114167727",
         "114166389",
@@ -98,11 +97,6 @@
           "name": "포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 찬석」",
           "productNo": "114167079",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=114167079"
-        },
-        {
-          "name": "포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 주혜」",
-          "productNo": "114167069",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=114167069"
         },
         {
           "name": "포켓몬 카드 게임 카드 실드 「마스카나&라우드본&웨이니발」",
@@ -152,12 +146,12 @@
       ],
       "category_no": "488339",
       "checked_count": 250,
-      "last_checked_at": "2026-07-12T09:29:57.684729+00:00",
+      "last_checked_at": "2026-07-12T10:59:18.822452+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 250건 / 판매중 11건: 포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 찬석」, 포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 주혜」, 포켓몬 카드 게임 카드 실드 「마스카나&라우드본&웨이니발」, 포켓몬 카드 게임 카드 실드 「코라이돈」, 포켓몬 카드 게임 카드 실드 「미끄래곤(히스이의 모습)」 외 6개",
+      "name": "카테고리 488339 총 250건 / 판매중 10건: 포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 찬석」, 포켓몬 카드 게임 카드 실드 「마스카나&라우드본&웨이니발」, 포켓몬 카드 게임 카드 실드 「코라이돈」, 포켓몬 카드 게임 카드 실드 「미끄래곤(히스이의 모습)」, 포켓몬 카드 게임 카드 실드 「자시안&자마젠타(역전의 용사)」 외 5개",
       "status": "in_stock",
       "total_count": 250
     }
   },
-  "updated_at": "2026-07-12T09:29:57.684750+00:00"
+  "updated_at": "2026-07-12T10:59:18.822476+00:00"
 }
