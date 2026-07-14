@@ -79,19 +79,13 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 4,
+      "available_count": 3,
       "available_product_nos": [
-        "114167727",
         "114168821",
         "131038465",
         "131038464"
       ],
       "available_products": [
-        {
-          "name": "포켓몬 카드 게임 카드 실드 「코라이돈」",
-          "productNo": "114167727",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=114167727"
-        },
         {
           "name": "포켓몬 카드 게임 카드 실드 「마스카나&라우드본&웨이니발」",
           "productNo": "114168821",
@@ -110,12 +104,12 @@
       ],
       "category_no": "488339",
       "checked_count": 249,
-      "last_checked_at": "2026-07-13T23:15:41.227449+00:00",
+      "last_checked_at": "2026-07-14T00:54:30.697422+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 249건 / 판매중 4건: 포켓몬 카드 게임 카드 실드 「코라이돈」, 포켓몬 카드 게임 카드 실드 「마스카나&라우드본&웨이니발」, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 피카츄, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 메타몽",
+      "name": "카테고리 488339 총 249건 / 판매중 3건: 포켓몬 카드 게임 카드 실드 「마스카나&라우드본&웨이니발」, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 피카츄, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 메타몽",
       "status": "in_stock",
       "total_count": 249
     }
   },
-  "updated_at": "2026-07-13T23:15:41.227472+00:00"
+  "updated_at": "2026-07-14T00:54:30.697441+00:00"
 }
