@@ -79,12 +79,18 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 2,
+      "available_count": 3,
       "available_product_nos": [
+        "114167079",
         "131038465",
         "131038464"
       ],
       "available_products": [
+        {
+          "name": "포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 찬석」",
+          "productNo": "114167079",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=114167079"
+        },
         {
           "name": "포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 피카츄",
           "productNo": "131038465",
@@ -98,12 +104,12 @@
       ],
       "category_no": "488339",
       "checked_count": 249,
-      "last_checked_at": "2026-07-14T08:38:38.486635+00:00",
+      "last_checked_at": "2026-07-14T10:26:24.038301+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 249건 / 판매중 2건: 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 피카츄, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 메타몽",
+      "name": "카테고리 488339 총 249건 / 판매중 3건: 포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 찬석」, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 피카츄, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 메타몽",
       "status": "in_stock",
       "total_count": 249
     }
   },
-  "updated_at": "2026-07-14T08:38:38.486662+00:00"
+  "updated_at": "2026-07-14T10:26:24.038323+00:00"
 }
