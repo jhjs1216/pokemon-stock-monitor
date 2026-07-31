@@ -79,31 +79,17 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 2,
-      "available_product_nos": [
-        "131038465",
-        "131038464"
-      ],
-      "available_products": [
-        {
-          "name": "포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 피카츄",
-          "productNo": "131038465",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=131038465"
-        },
-        {
-          "name": "포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 메타몽",
-          "productNo": "131038464",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=131038464"
-        }
-      ],
+      "available_count": 0,
+      "available_product_nos": [],
+      "available_products": [],
       "category_no": "488339",
       "checked_count": 191,
-      "last_checked_at": "2026-07-31T14:37:36.606314+00:00",
+      "last_checked_at": "2026-07-31T16:25:49.905811+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 191건 / 판매중 2건: 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 피카츄, 포켓몬센터 포켓몬 카드 게임 프리미엄 레더 플립 덱케이스 메타몽",
-      "status": "in_stock",
+      "name": "카테고리 488339 총 191건 / 판매중 0건",
+      "status": "out_of_stock",
       "total_count": 191
     }
   },
-  "updated_at": "2026-07-31T14:37:36.606335+00:00"
+  "updated_at": "2026-07-31T16:25:49.905825+00:00"
 }
