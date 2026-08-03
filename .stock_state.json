@@ -79,25 +79,17 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 1,
-      "available_product_nos": [
-        "114166589"
-      ],
-      "available_products": [
-        {
-          "name": "포켓몬 카드 게임 카드 실드 「자시안&자마젠타(역전의 용사)」",
-          "productNo": "114166589",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=114166589"
-        }
-      ],
+      "available_count": 0,
+      "available_product_nos": [],
+      "available_products": [],
       "category_no": "488339",
       "checked_count": 199,
-      "last_checked_at": "2026-08-03T16:41:43.118695+00:00",
+      "last_checked_at": "2026-08-03T18:28:54.785210+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 199건 / 판매중 1건: 포켓몬 카드 게임 카드 실드 「자시안&자마젠타(역전의 용사)」",
-      "status": "in_stock",
+      "name": "카테고리 488339 총 199건 / 판매중 0건",
+      "status": "out_of_stock",
       "total_count": 199
     }
   },
-  "updated_at": "2026-08-03T16:41:43.118717+00:00"
+  "updated_at": "2026-08-03T18:28:54.785237+00:00"
 }
