@@ -79,25 +79,17 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 1,
-      "available_product_nos": [
-        "136143402"
-      ],
-      "available_products": [
-        {
-          "name": "포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
-          "productNo": "136143402",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143402"
-        }
-      ],
+      "available_count": 0,
+      "available_product_nos": [],
+      "available_products": [],
       "category_no": "488339",
       "checked_count": 199,
-      "last_checked_at": "2026-08-05T20:11:23.109479+00:00",
+      "last_checked_at": "2026-08-05T21:35:40.606927+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 199건 / 판매중 1건: 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
-      "status": "in_stock",
+      "name": "카테고리 488339 총 199건 / 판매중 0건",
+      "status": "out_of_stock",
       "total_count": 199
     }
   },
-  "updated_at": "2026-08-05T20:11:23.109506+00:00"
+  "updated_at": "2026-08-05T21:35:40.606951+00:00"
 }
