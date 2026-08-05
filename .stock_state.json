@@ -83,13 +83,13 @@
       "available_product_nos": [],
       "available_products": [],
       "category_no": "488339",
-      "checked_count": 199,
-      "last_checked_at": "2026-08-05T14:57:30.062414+00:00",
+      "checked_count": 65,
+      "last_checked_at": "2026-08-05T16:47:56.672633+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 199건 / 판매중 0건",
+      "name": "카테고리 488339 총 65건 / 판매중 0건",
       "status": "out_of_stock",
-      "total_count": 199
+      "total_count": 65
     }
   },
-  "updated_at": "2026-08-05T14:57:30.062441+00:00"
+  "updated_at": "2026-08-05T16:47:56.672668+00:00"
 }
