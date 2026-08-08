@@ -79,31 +79,17 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 2,
-      "available_product_nos": [
-        "136143165",
-        "136143075"
-      ],
-      "available_products": [
-        {
-          "name": "포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」",
-          "productNo": "136143165",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143165"
-        },
-        {
-          "name": "포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」",
-          "productNo": "136143075",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143075"
-        }
-      ],
+      "available_count": 0,
+      "available_product_nos": [],
+      "available_products": [],
       "category_no": "488339",
       "checked_count": 199,
-      "last_checked_at": "2026-08-08T15:12:03.116375+00:00",
+      "last_checked_at": "2026-08-08T15:48:54.470269+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 199건 / 판매중 2건: 포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」, 포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」",
-      "status": "in_stock",
+      "name": "카테고리 488339 총 199건 / 판매중 0건",
+      "status": "out_of_stock",
       "total_count": 199
     }
   },
-  "updated_at": "2026-08-08T15:12:03.116403+00:00"
+  "updated_at": "2026-08-08T15:48:54.470297+00:00"
 }
