@@ -84,12 +84,12 @@
       "available_products": [],
       "category_no": "488339",
       "checked_count": 200,
-      "last_checked_at": "2026-08-26T05:39:38.576396+00:00",
-      "last_error": "503 Server Error: Service Unavailable for url: https://www.pokemonstore.co.kr/environment.json",
+      "last_checked_at": "2026-08-26T06:19:32.836874+00:00",
+      "last_error": null,
       "name": "카테고리 488339 총 200건 / 판매중 0건",
       "status": "out_of_stock",
       "total_count": 200
     }
   },
-  "updated_at": "2026-08-26T05:39:38.576578+00:00"
+  "updated_at": "2026-08-26T06:19:32.836897+00:00"
 }
