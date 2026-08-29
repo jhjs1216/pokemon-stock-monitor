@@ -79,25 +79,17 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 1,
-      "available_product_nos": [
-        "136570884"
-      ],
-      "available_products": [
-        {
-          "name": "포켓몬 카드 게임 MEGA 확장팩 「스톰에메랄다」",
-          "productNo": "136570884",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136570884"
-        }
-      ],
+      "available_count": 0,
+      "available_product_nos": [],
+      "available_products": [],
       "category_no": "488339",
       "checked_count": 200,
-      "last_checked_at": "2026-08-29T15:14:22.299062+00:00",
+      "last_checked_at": "2026-08-29T18:38:33.184609+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 200건 / 판매중 1건: 포켓몬 카드 게임 MEGA 확장팩 「스톰에메랄다」",
-      "status": "in_stock",
+      "name": "카테고리 488339 총 200건 / 판매중 0건",
+      "status": "out_of_stock",
       "total_count": 200
     }
   },
-  "updated_at": "2026-08-29T15:14:22.299088+00:00"
+  "updated_at": "2026-08-29T18:38:33.184633+00:00"
 }
