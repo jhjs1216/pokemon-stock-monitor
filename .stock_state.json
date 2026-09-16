@@ -79,17 +79,31 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 0,
-      "available_product_nos": [],
-      "available_products": [],
+      "available_count": 2,
+      "available_product_nos": [
+        "136999205",
+        "136999237"
+      ],
+      "available_products": [
+        {
+          "name": "포켓몬 카드 게임 카드 실드 「30주년(BLUE)」",
+          "productNo": "136999205",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136999205"
+        },
+        {
+          "name": "포켓몬 카드 게임 카드 실드 「3마리의 모험」",
+          "productNo": "136999237",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136999237"
+        }
+      ],
       "category_no": "488339",
-      "checked_count": 200,
-      "last_checked_at": "2026-09-16T06:08:29.097364+00:00",
+      "checked_count": 209,
+      "last_checked_at": "2026-09-16T11:40:10.409560+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 200건 / 판매중 0건",
-      "status": "out_of_stock",
-      "total_count": 200
+      "name": "카테고리 488339 총 209건 / 판매중 2건: 포켓몬 카드 게임 카드 실드 「30주년(BLUE)」, 포켓몬 카드 게임 카드 실드 「3마리의 모험」",
+      "status": "in_stock",
+      "total_count": 209
     }
   },
-  "updated_at": "2026-09-16T06:08:29.097388+00:00"
+  "updated_at": "2026-09-16T11:40:10.409584+00:00"
 }
