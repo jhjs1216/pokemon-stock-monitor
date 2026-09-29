@@ -79,18 +79,12 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 3,
+      "available_count": 2,
       "available_product_nos": [
-        "136143584",
         "136143075",
         "136142937"
       ],
       "available_products": [
-        {
-          "name": "포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
-          "productNo": "136143584",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143584"
-        },
         {
           "name": "포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」",
           "productNo": "136143075",
@@ -104,12 +98,12 @@
       ],
       "category_no": "488339",
       "checked_count": 209,
-      "last_checked_at": "2026-09-29T02:00:10.108440+00:00",
+      "last_checked_at": "2026-09-29T08:21:47.032656+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 209건 / 판매중 3건: 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」, 포켓몬 카드 게임 플레이매트 「디멘션 : 뮤&뮤츠」",
+      "name": "카테고리 488339 총 209건 / 판매중 2건: 포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」, 포켓몬 카드 게임 플레이매트 「디멘션 : 뮤&뮤츠」",
       "status": "in_stock",
       "total_count": 209
     }
   },
-  "updated_at": "2026-09-29T02:00:10.108463+00:00"
+  "updated_at": "2026-09-29T08:21:47.032679+00:00"
 }
