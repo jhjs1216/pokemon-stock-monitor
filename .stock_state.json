@@ -86,8 +86,8 @@
         "136143529",
         "136142937",
         "136143013",
-        "136143584",
-        "136143075"
+        "136143075",
+        "136143584"
       ],
       "available_products": [
         {
@@ -116,24 +116,24 @@
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143013"
         },
         {
-          "name": "포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
-          "productNo": "136143584",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143584"
-        },
-        {
           "name": "포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」",
           "productNo": "136143075",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143075"
+        },
+        {
+          "name": "포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
+          "productNo": "136143584",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143584"
         }
       ],
       "category_no": "488339",
       "checked_count": 215,
-      "last_checked_at": "2026-10-21T06:04:11.143038+00:00",
+      "last_checked_at": "2026-10-21T11:54:56.068493+00:00",
       "last_error": null,
       "name": "카테고리 488339 총 215건 / 판매중 7건: 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 플레이매트 「디멘션 : 뮤&뮤츠」, 포켓몬 카드 게임 덱 케이스 「디멘션 : 뮤&뮤츠」 외 2개",
       "status": "in_stock",
       "total_count": 215
     }
   },
-  "updated_at": "2026-10-21T06:04:11.143060+00:00"
+  "updated_at": "2026-10-21T11:54:56.068516+00:00"
 }
