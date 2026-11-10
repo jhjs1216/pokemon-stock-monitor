@@ -79,7 +79,7 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 10,
+      "available_count": 11,
       "available_product_nos": [
         "136143402",
         "136143650",
@@ -89,6 +89,7 @@
         "136143165",
         "136143075",
         "136143013",
+        "115634309",
         "137635006",
         "137635025"
       ],
@@ -134,6 +135,11 @@
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143013"
         },
         {
+          "name": "포켓몬 카드 게임 Classic",
+          "productNo": "115634309",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=115634309"
+        },
+        {
           "name": "포켓몬 카드 게임 덱 케이스 「Spooky Flame」",
           "productNo": "137635006",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=137635006"
@@ -146,12 +152,12 @@
       ],
       "category_no": "488339",
       "checked_count": 216,
-      "last_checked_at": "2026-11-10T03:49:36.164669+00:00",
+      "last_checked_at": "2026-11-10T12:23:33.457991+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 216건 / 판매중 10건: 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 플레이매트 「디멘션 : 뮤&뮤츠」 외 5개",
+      "name": "카테고리 488339 총 216건 / 판매중 11건: 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 플레이매트 「디멘션 : 뮤&뮤츠」 외 6개",
       "status": "in_stock",
       "total_count": 216
     }
   },
-  "updated_at": "2026-11-10T03:49:36.164691+00:00"
+  "updated_at": "2026-11-10T12:23:33.458016+00:00"
 }
