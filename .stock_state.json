@@ -81,14 +81,14 @@
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
       "available_count": 17,
       "available_product_nos": [
-        "136143402",
         "136143650",
+        "136143402",
         "136143529",
         "136143584",
         "136143165",
         "136142937",
-        "136143075",
         "136143013",
+        "136143075",
         "137694686",
         "137694810",
         "137694998",
@@ -101,14 +101,14 @@
       ],
       "available_products": [
         {
-          "name": "포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
-          "productNo": "136143402",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143402"
-        },
-        {
           "name": "포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
           "productNo": "136143650",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143650"
+        },
+        {
+          "name": "포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
+          "productNo": "136143402",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143402"
         },
         {
           "name": "포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」",
@@ -131,14 +131,14 @@
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136142937"
         },
         {
-          "name": "포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」",
-          "productNo": "136143075",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143075"
-        },
-        {
           "name": "포켓몬 카드 게임 덱 케이스 「디멘션 : 뮤&뮤츠」",
           "productNo": "136143013",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143013"
+        },
+        {
+          "name": "포켓몬 카드 게임 틴 케이스 「디멘션 : 뮤&뮤츠」",
+          "productNo": "136143075",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143075"
         },
         {
           "name": "포켓몬 카드 게임 카드 실드 「고풍에디션 프리져&썬더&파이어」",
@@ -188,12 +188,12 @@
       ],
       "category_no": "488339",
       "checked_count": 223,
-      "last_checked_at": "2026-11-11T15:20:51.459819+00:00",
+      "last_checked_at": "2026-11-11T22:10:27.310677+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 223건 / 판매중 17건: 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」 외 12개",
+      "name": "카테고리 488339 총 223건 / 판매중 17건: 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」 외 12개",
       "status": "in_stock",
       "total_count": 223
     }
   },
-  "updated_at": "2026-11-11T15:20:51.459840+00:00"
+  "updated_at": "2026-11-11T22:10:27.310697+00:00"
 }
