@@ -79,7 +79,7 @@
       "status": "out_of_stock"
     },
     "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488339": {
-      "available_count": 16,
+      "available_count": 18,
       "available_product_nos": [
         "136143650",
         "136143402",
@@ -89,11 +89,13 @@
         "136142937",
         "136143013",
         "136143075",
+        "114167079",
         "137694810",
         "137694998",
         "137694836",
         "137694167",
         "137694704",
+        "114167069",
         "115634309",
         "137635006",
         "137635025"
@@ -140,6 +142,11 @@
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=136143075"
         },
         {
+          "name": "포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 찬석」",
+          "productNo": "114167079",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=114167079"
+        },
+        {
           "name": "포켓몬 카드 게임 카드 실드 「고풍에디션 샤미드와 콘치」",
           "productNo": "137694810",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=137694810"
@@ -165,6 +172,11 @@
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=137694704"
         },
         {
+          "name": "포켓몬센터 포켓몬 카드 게임 카드 실드 「HISUI DAYS 주혜」",
+          "productNo": "114167069",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=114167069"
+        },
+        {
           "name": "포켓몬 카드 게임 Classic",
           "productNo": "115634309",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=115634309"
@@ -182,12 +194,12 @@
       ],
       "category_no": "488339",
       "checked_count": 223,
-      "last_checked_at": "2026-11-19T02:26:41.456971+00:00",
+      "last_checked_at": "2026-11-19T10:41:40.712022+00:00",
       "last_error": null,
-      "name": "카테고리 488339 총 223건 / 판매중 16건: 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」 외 11개",
+      "name": "카테고리 488339 총 223건 / 판매중 18건: 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」 외 13개",
       "status": "in_stock",
       "total_count": 223
     }
   },
-  "updated_at": "2026-11-19T02:26:41.456995+00:00"
+  "updated_at": "2026-11-19T10:41:40.712046+00:00"
 }
