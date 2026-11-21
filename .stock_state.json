@@ -97,8 +97,8 @@
         "137694704",
         "114167069",
         "138208126",
-        "137635006",
         "138208121",
+        "137635006",
         "137635025"
       ],
       "available_products": [
@@ -183,14 +183,14 @@
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=138208126"
         },
         {
-          "name": "포켓몬 카드 게임 덱 케이스 「Spooky Flame」",
-          "productNo": "137635006",
-          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=137635006"
-        },
-        {
           "name": "포켓몬 카드 게임 아크릴 카드 홀더 세트 「개굴닌자」",
           "productNo": "138208121",
           "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=138208121"
+        },
+        {
+          "name": "포켓몬 카드 게임 덱 케이스 「Spooky Flame」",
+          "productNo": "137635006",
+          "url": "https://www.pokemonstore.co.kr/pages/product/product-detail.html?productNo=137635006"
         },
         {
           "name": "포켓몬 카드 게임 플레이매트 「Spooky Flame」",
@@ -200,12 +200,12 @@
       ],
       "category_no": "488339",
       "checked_count": 225,
-      "last_checked_at": "2026-11-21T06:41:41.372450+00:00",
+      "last_checked_at": "2026-11-21T14:57:11.529548+00:00",
       "last_error": null,
       "name": "카테고리 488339 총 225건 / 판매중 19건: 포켓몬 카드 게임 컬렉션 파일 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 틴 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 덱 케이스 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 플레이매트 「모험의 시작 : 피카츄·이상해씨·파이리·꼬부기」, 포켓몬 카드 게임 컬렉션 파일 「디멘션 : 뮤&뮤츠」 외 14개",
       "status": "in_stock",
       "total_count": 225
     }
   },
-  "updated_at": "2026-11-21T06:41:41.372471+00:00"
+  "updated_at": "2026-11-21T14:57:11.529570+00:00"
 }
